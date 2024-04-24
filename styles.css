@@ -12,12 +12,13 @@ body{
     font-family: "Poppins", sans-serif;
 }
 
-header{
+header {
     background-color: #EBAD8D;
     height: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 header h1{
@@ -27,7 +28,7 @@ header h1{
 main {
     display: flex;
     align-items: center;
-    height: 68.7vh; /* Ajusta la altura para centrar en toda la pantalla */
+    height: 68.7vh;
     margin: 50px;
 }
 
@@ -80,4 +81,31 @@ footer{
 
 footer img{
     width: 25vh;
+}
+@media (max-width:550px) {
+    header h1 {
+        font-size: 40px;
+    }
+
+    main {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+
+    .imagen-container {
+        float: none;
+    }
+
+    .imagen-container img {
+        width: 100%;
+    }
+
+    .datos-container {
+        margin-bottom: 90px;
+    }
+
+    .datos-content {
+        margin-left: 0;
+    }
 }
