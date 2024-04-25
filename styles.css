@@ -60,6 +60,9 @@ main {
     font-weight: normal;
 }
 
+.datos-content a {
+    color: #000000;
+}
 footer{
     background-color: #EBAD8D;
     height: 80px;
